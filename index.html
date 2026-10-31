@@ -1,1 +1,19 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Iraq University Teachers Emails</title>
+</head>
+<body>
+<pre id="emails">Loading emails...</pre>
+<script>
+fetch("./emails")
+.then(response => response.text())
+.then(data => {
+document.getElementById("emails").textContent = data;
+});
+</script>
+</body>
+</html>
